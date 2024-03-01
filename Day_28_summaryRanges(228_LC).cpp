@@ -4,6 +4,9 @@ public:
     vector<string> summaryRanges(vector<int> &nums)
     {
         vector<string> ans;
+        if (nums.empty())
+            return ans;
+
         int first = nums[0];
         int last = nums[0];
 
